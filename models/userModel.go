@@ -10,7 +10,7 @@ type User struct{
 	First_name		*string					`json:"first_name" validate:"required,min=2,max=100"`
 	Last_name		*string					`json:"last_name" validate:"required,min=2,max=100"`
 	Password		*string					`json:"Password" validate:"required,min=6"`
-	Email			*string					`json:"email" validate:"email,required"`
+	Email			*string					`json:"email" validate:"required"`
 	Phone			*string					`json:"phone" validate:"required"`
 	Token			*string					`json:"token"`
 	User_type		*string					`json:"user_type" validate:"required,eq=ADMIN|eq=USER"`
